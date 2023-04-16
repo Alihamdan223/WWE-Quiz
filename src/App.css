@@ -1,38 +1,74 @@
-.App {
+body {
+  margin: 0;
+}
+
+.main-ui {
+  background-image: url("https://seeklogo.com/images/W/WWE-logo-5569E9F466-seeklogo.com.png");
+  background-position: center;
+  padding: 70px;
+}
+
+.ui-section {
+  background-color: white;
+  width: 95%;
+  padding: 15px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ui-section header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ui-section header h1 {
+  font-weight: 500;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ui-section header h2 {
+  font-weight: 500;
+  font-family:cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.answers-list {
+  list-style-type: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+.answers-list li {
+  border: 1px solid silver;
+  border-radius: 30px;
+  padding: 8px 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.answers-list li:hover {
+  background-color: silver;
+  cursor: pointer;
+}
+
+.StyleIt {
+  background-color: brown;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.press {
+  border: none;
+  background-color:rgb(151, 18, 18);
+  color: white;
+  width: 120px;
+  padding: 8px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Correct-Answer {
+  background-color: green;
+  color: white;
+}
+
+.Wrong-Answer {
+  background-color: red;
+  color: white;
 }
